@@ -1,0 +1,185 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Page &mdash; CIZETNECH 1.0.0 문서</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b76e3c8a" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5a0dd2f0"></script>
+      <script src="../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=b5f768d8"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="Capture Page" href="capture.html" />
+    <link rel="prev" title="Install to CameraMaster-2.0" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            CIZETNECH
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Jetson Software</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../CameraMaster-1.0/index.html">CameraMaster - 1.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">CameraMaster - 2.0</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduce.html">Introduction to CameraMaster-2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Install to CameraMaster-2.0</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Live Page</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#live-play">Live Play (실시간 영상 제어)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#capture">Capture (이미지 캡처 기능)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#single-dual-mode">Single &amp; Dual Mode 전환</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ai-detection">AI Detection 기능</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="capture.html">Capture Page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setting.html">Setting Page</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../DriverMaster/index.html">DriverMaster</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Windows Software</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../DPS/index.html">DPS</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CIZETNECH</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">&lt;no title&gt;</a></li>
+          <li class="breadcrumb-item"><a href="index.html">CameraMaster - 2.0</a></li>
+      <li class="breadcrumb-item active">Live Page</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Jetson/CameraMaster-2.0/live.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="live-page">
+<h1>Live Page<a class="headerlink" href="#live-page" title="Link to this heading"></a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<p><img alt="&quot;livepage&quot;" src="../../_images/live1.png" /></p>
+<p>Live 페이지는 실시간 영상 모드, 캡처 모드, 설정 변경 기능을 제공합니다.</p>
+<ul class="simple">
+<li><p><strong>왼쪽 메뉴</strong> 에는 페이지 설정을 위한 버튼들이 배치됩니다.</p>
+<ul>
+<li><p>Live 버튼을 선택하면 실시간 영상 모드로 전환됩니다.</p></li>
+<li><p>Capture 버튼을 선택하면 캡처 모드로 전환됩니다.</p></li>
+<li><p>Setting 버튼을 선택하면 설정 변경이 가능합니다.</p></li>
+</ul>
+</li>
+<li><p>상단 버튼 그룹에서는 Live 모드에서 사용할 수 있는 다양한 컨트롤 버튼을 제공합니다.</p></li>
+<li><p><strong>하단 상태 표시줄(Status Bar)</strong> 에서는 현재 설정된 해상도와 프레임별 FPS(초당 프레임 수) 정보를 확인할 수 있습니다.</p></li>
+</ul>
+</section>
+<section id="live-play">
+<h2>Live Play (실시간 영상 제어)<a class="headerlink" href="#live-play" title="Link to this heading"></a></h2>
+<p><img alt="&quot;play&quot;" src="../../_images/play.png" /></p>
+<p>Live Play 기능을 통해 실시간 영상 재생 및 정지가 가능합니다.</p>
+<ul class="simple">
+<li><p><strong>Play</strong> 버튼을 누르면 설정된 값으로 실시간 영상이 재생됩니다.</p></li>
+<li><p><strong>Stop</strong> 버튼을 누르면 실시간 영상이 정지됩니다.</p></li>
+</ul>
+</section>
+<section id="capture">
+<h2>Capture (이미지 캡처 기능)<a class="headerlink" href="#capture" title="Link to this heading"></a></h2>
+<p><img alt="&quot;capture&quot;" src="../../_images/capture_btn.png" /></p>
+<p><strong>Capture</strong> 기능을 통해 특정 프레임을 이미지로 저장할 수 있습니다.</p>
+<ul class="simple">
+<li><p>Capture 버튼을 클릭하면 현재 프레임이 캡처됩니다.</p></li>
+<li><p>캡처 후 자동으로 Capture 페이지로 이동합니다.</p></li>
+</ul>
+</section>
+<section id="single-dual-mode">
+<h2>Single &amp; Dual Mode 전환<a class="headerlink" href="#single-dual-mode" title="Link to this heading"></a></h2>
+<p><img alt="&quot;single mode&quot;" src="../../_images/single_mode.png" /></p>
+<p><strong>Single &amp; Dual Mode</strong> 기능을 활용하여 영상 모드를 변경할 수 있습니다.</p>
+<ul class="simple">
+<li><p>1채널(싱글) 카메라 모드로 설정하면 단일 카메라의 영상을 출력합니다.</p></li>
+<li><p>듀얼 카메라 모드로 설정하면 <strong>두 개의 카메라 영상을 동시에 출력합니다.</strong></p></li>
+<li><p>사용자 설정에 따라 원하는 모드로 전환할 수 있습니다.</p></li>
+</ul>
+</section>
+<section id="ai-detection">
+<h2>AI Detection 기능<a class="headerlink" href="#ai-detection" title="Link to this heading"></a></h2>
+<p><img alt="&quot;ai mode&quot;" src="../../_images/ai_btn.png" /></p>
+<p><strong>AI Detection</strong> 기능을 활성화하면 영상 내 객체를 자동으로 감지할 수 있습니다.</p>
+<ul class="simple">
+<li><p>제공된 데모 AI 모델을 활용하여 실시간 객체 탐지를 수행합니다.</p></li>
+<li><p>AI Detection이 활성화되면 실시간으로 감지된 결과가 화면에 표시됩니다.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-left" title="Install to CameraMaster-2.0" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="capture.html" class="btn btn-neutral float-right" title="Capture Page" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, David.kim.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

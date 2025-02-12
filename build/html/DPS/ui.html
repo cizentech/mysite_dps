@@ -1,0 +1,204 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI &mdash; CIZETNECH 1.0.0 문서</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5a0dd2f0"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=b5f768d8"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="prev" title="Install" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            CIZETNECH
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Jetson Software</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Jetson/CameraMaster-1.0/index.html">CameraMaster - 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Jetson/CameraMaster-2.0/index.html">CameraMaster - 2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Jetson/DriverMaster/index.html">DriverMaster</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Windows Software</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">DPS</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduce.html">Introduce</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">UI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#connect">Connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#control-voltage">Control Voltage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calibration">Calibration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#log">Log</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setting">Setting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CIZETNECH</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">DPS</a></li>
+      <li class="breadcrumb-item active">UI</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/DPS/ui.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ui">
+<h1>UI<a class="headerlink" href="#ui" title="Link to this heading"></a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<p><img alt="capturepage" src="../_images/dps-main.png" /></p>
+<p>DPS 보드는 다양한 기능을 제공하는 소프트웨어입니다. 이 소프트웨어는 다음과 같은 기능을 제공합니다:</p>
+<ul class="simple">
+<li><p><strong>연결</strong> : DPS 보드와 연결하여 제어할 수 있습니다.</p></li>
+<li><p><strong>로그 확인</strong> : 사용자가 로그를 확인하고 문제를 추적할 수 있습니다.</p></li>
+<li><p><strong>제어(Control)</strong> : DPS 보드를 제어하고 설정할 수 있습니다.</p></li>
+<li><p><strong>교정(Calibration)</strong> : 보드를 더욱 정확하게 사용하기 위한 교정 기능을 제공합니다. 그 결과를 <strong>그래프</strong> 형태로 확인할 수 있습니다.</p></li>
+</ul>
+<br>
+<hr class="docutils" />
+<br>
+</section>
+<section id="connect">
+<h2>Connect<a class="headerlink" href="#connect" title="Link to this heading"></a></h2>
+<p><img alt="capturepage" src="../_images/dps-connect.png" /></p>
+<p><strong>Connect</strong> 화면에서는 <strong>USB로 연결된 DPS 보드</strong> 를 개별적으로 연결할 수 있습니다:</p>
+<ul class="simple">
+<li><p>사용자는 지정된 <strong>포트(Port)</strong> 를 설정하여 각 <strong>DPS 보드의 전원 On/Off 제어</strong> 를 할 수 있습니다.</p></li>
+<li><p>이를 통해 <strong>보드 제어</strong> 가 이루어집니다.</p></li>
+</ul>
+<br>
+<hr class="docutils" />
+<br>
+</section>
+<section id="control-voltage">
+<h2>Control Voltage<a class="headerlink" href="#control-voltage" title="Link to this heading"></a></h2>
+<p><img alt="capturepage" src="../_images/dps-control.png" /></p>
+<p><strong>Current Voltage</strong> 화면에서는 각 채널에 대해 <strong>전압(Voltage)</strong> 을 확인할 수 있습니다:</p>
+<ul class="simple">
+<li><p><strong>DPS 보드의 전압 상태</strong> 를 실시간으로 모니터링할 수 있습니다.</p></li>
+</ul>
+<p><strong>Control Voltage</strong> 기능을 통해 각 채널에 대해 개별적으로 <strong>전압(Voltage)</strong> 을 설정할 수 있습니다:</p>
+<ul class="simple">
+<li><p>사용자는 <strong>현재 설정된 전압</strong> 과 <strong>전류(Current)</strong> 를 실시간으로 측정하고 확인할 수 있습니다.</p></li>
+<li><p><strong>교정(Calibration)</strong> 을 진행한 후, 각 <strong>DPS 보드</strong> 에 개별적으로 적용할 수 있습니다.</p></li>
+</ul>
+<br>
+<hr class="docutils" />
+<br>
+</section>
+<section id="calibration">
+<h2>Calibration<a class="headerlink" href="#calibration" title="Link to this heading"></a></h2>
+<p><img alt="capturepage" src="../_images/dps-calibration.png" /></p>
+<p><strong>Calibration</strong> 과정을 통해 <strong>DPS 보드</strong> 를 더욱 정확하게 사용할 수 있습니다:</p>
+<ul class="simple">
+<li><p><strong>개별적인 제어(Control)</strong> 가 가능하며, <strong>결과를 차트</strong> 형태로 확인할 수 있습니다.</p></li>
+<li><p><strong>DPS 보드</strong> 의 성능을 최적화하는 중요한 기능입니다.</p></li>
+</ul>
+<br>
+<hr class="docutils" />
+<br>
+</section>
+<section id="log">
+<h2>Log<a class="headerlink" href="#log" title="Link to this heading"></a></h2>
+<p><img alt="capturepage" src="../_images/dps-log.png" /></p>
+<p><strong>Log</strong> 화면에서는 측정된 <strong>전압</strong> 및 <strong>전류</strong> 값과 소프트웨어 사용 중 발생한 <strong>에러</strong>를 확인할 수 있습니다.</p>
+<ul class="simple">
+<li><p>사용자는 <strong>측정된 전압</strong> 및 <strong>전류</strong> 값을 실시간으로 확인할 수 있습니다.</p></li>
+<li><p>발생한 <strong>에러 메시지</strong>를 통해 문제의 원인을 빠르게 파악하고, 신속하게 대응할 수 있습니다.</p></li>
+</ul>
+<br>
+<hr class="docutils" />
+<br>
+</section>
+<section id="setting">
+<h2>Setting<a class="headerlink" href="#setting" title="Link to this heading"></a></h2>
+<p><img alt="capturepage" src="../_images/dps-setting.png" /></p>
+<p><strong>Setting</strong> 화면에서는 다음과 같은 기능을 제공합니다:</p>
+<ul class="simple">
+<li><p><strong>펌웨어(FW) 버전</strong> 과 <strong>보드 ID</strong> 를 확인할 수 있습니다.</p></li>
+<li><p>사용자는 <strong>DPS ID</strong> 를 설정하고, <strong>저장된 보드 정보</strong> 를 불러오거나 저장할 수 있습니다.</p></li>
+</ul>
+<p>이 기능을 통해 <strong>DPS 보드 관리</strong> 가 편리하게 이루어집니다.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-left" title="Install" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, David.kim.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
