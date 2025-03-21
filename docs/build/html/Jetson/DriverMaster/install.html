@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Install &mdash; CIZETNECH 1.0.0 문서</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b76e3c8a" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=2e47f599" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=5a0dd2f0"></script>
+      <script src="../../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=b5f768d8"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="DPS Master" href="../../DPS/index.html" />
+    <link rel="prev" title="Introduce" href="introduce.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            CIZETNECH
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Jetson Software</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../CameraMaster-1.0/index.html">CameraMaster - 1.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CameraMaster-2.0/index.html">CameraMaster - 2.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">DriverMaster</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="introduce.html">Introduce</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Install</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">시스템 업데이트 및 업그레이드</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">설치 프로그램 다운로드</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#drivermaster">DriverMaster 실행</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Windows Software</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../DPS/index.html">DPS Master</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CIZETNECH</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">&lt;no title&gt;</a></li>
+          <li class="breadcrumb-item"><a href="index.html">DriverMaster</a></li>
+      <li class="breadcrumb-item active">Install</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Jetson/DriverMaster/install.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="install">
+<h1>Install<a class="headerlink" href="#install" title="Link to this heading"></a></h1>
+<p>이 가이드는 Jetson Orin 및 Ubuntu 22.04 환경에서 DriverMaster 를  설치하는 방법을 설명합니다.
+설치는 크게 시스템 업데이트, 설치 파일 다운로드 2가지로 진행됩니다.</p>
+<section id="id1">
+<h2>시스템 업데이트 및 업그레이드<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p>설치 전, 시스템을 최신 상태로 유지하기 위해 패키지 목록을 업데이트하고 설치된 패키지를 업그레이드해야 합니다.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+</pre></div>
+</div>
+<p>⚠ 주의: 시스템 업데이트 및 업그레이드는 네트워크 연결이 필요합니다.</p>
+</section>
+<section id="id2">
+<h2>설치 프로그램 다운로드<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>DriverMaster 설치 파일 (.deb 패키지)을 다운로드합니다.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>&lt;url&gt;
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>wget 명령을 사용하여 CameraMaster-2.0 패키지를 다운로드합니다.</p></li>
+<li><p>&lt;설치 파일 URL&gt; 부분은 제공예정</p></li>
+</ul>
+</section>
+<section id="drivermaster">
+<h2>DriverMaster 실행<a class="headerlink" href="#drivermaster" title="Link to this heading"></a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>DriverMaster
+sudo<span class="w"> </span>python3<span class="w"> </span>DriverMaster.py
+</pre></div>
+</div>
+<p><strong>주의사항</strong>: 터미널 창의 크기가 최소 요구사항보다 작을 경우 프로그램이 정상적으로 실행되지 않을 수 있습니다. 이러한 경우 터미널 창을 확장하여 최소 권장 크기(80x24)로 조정하십시오.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="introduce.html" class="btn btn-neutral float-left" title="Introduce" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../DPS/index.html" class="btn btn-neutral float-right" title="DPS Master" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, David.kim.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* _static/custom.css */
+
+/* 커스텀 버튼 스타일 */
+.custom-btn {
+    background-color: #0066cc;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+h1 {
+    font-weight: 900 !important;
+    font-size: 2.5rem !important;
+}
+
+/* 섹션 헤더 더 진하게 */
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+/* 추가적인 스타일링 */
+.section-header h2 {
+    color: #0066cc;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, p, a, button, input, select, textarea {
+    font-family: "맑은 고딕", "Malgun Gothic", Arial, sans-serif !important;
+}

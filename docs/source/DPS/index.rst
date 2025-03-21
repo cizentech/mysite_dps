@@ -1,9 +1,9 @@
-DPS
+DPS Master
 ================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: DPS
+   :caption: DPS Master
 
    introduce
    install

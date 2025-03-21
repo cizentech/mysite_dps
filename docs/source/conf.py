@@ -31,6 +31,11 @@ pygments_style = 'sphinx'
 templates_path = ['_templates']
 exclude_patterns = []
 
+html_css_files = [
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css',
+    'custom.css',
+]
+
 language = 'ko'
 
 # -- Options for HTML output -------------------------------------------------

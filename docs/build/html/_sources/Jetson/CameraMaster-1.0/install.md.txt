@@ -7,9 +7,9 @@
 wget <url>
 ```
 
-2. Jetson 에 .deb 파일 설치 
+<!-- 2. Jetson 에 .deb 파일 설치 
 
 ```sh
 sudo apt install ./CameraMasterg -<version>.deb
-```
+``` -->
 
